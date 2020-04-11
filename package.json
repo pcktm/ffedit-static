@@ -1,6 +1,6 @@
 {
   "name": "ffedit-static",
-  "version": "4.1.1",
+  "version": "1.0.0",
   "description": "FFedit static binaries for Mac OSX and Linux and Windows",
   "main": "index.js",
   "files": [
@@ -35,8 +35,8 @@
     "windows"
   ],
   "authors": [
-    "Eugene Ware <eugene@noblesamurai.com>",
     "Jakub Kopańko <hi@kopanko.com>",
+    "Eugene Ware <eugene@noblesamurai.com>",
     "contributors"
   ],
   "contributors": [
@@ -44,7 +44,7 @@
   ],
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/eugeneware/ffmpeg-static/issues"
+    "url": "https://github.com/pcktm/ffedit-static/issues"
   },
   "engines": {
     "node": ">=10"
