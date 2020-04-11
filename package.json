@@ -1,7 +1,7 @@
 {
   "name": "ffedit-static",
   "version": "4.1.1",
-  "description": "ffedit static binaries for Mac OSX and Linux and Windows",
+  "description": "FFedit static binaries for Mac OSX and Linux and Windows",
   "main": "index.js",
   "files": [
     "index.js",
@@ -36,7 +36,7 @@
   ],
   "authors": [
     "Eugene Ware <eugene@noblesamurai.com>",
-    "Jakub Kopańko <https://github.com/pcktm>",
+    "Jakub Kopańko <hi@kopanko.com>",
     "contributors"
   ],
   "contributors": [
