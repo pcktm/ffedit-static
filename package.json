@@ -1,12 +1,11 @@
 {
-  "name": "ffmpeg-static",
+  "name": "ffedit-static",
   "version": "4.1.1",
-  "description": "ffmpeg static binaries for Mac OSX and Linux and Windows",
+  "description": "ffedit static binaries for Mac OSX and Linux and Windows",
   "main": "index.js",
   "files": [
     "index.js",
-    "install.js",
-    "example.js"
+    "install.js"
   ],
   "scripts": {
     "install": "node install.js",
@@ -14,15 +13,19 @@
     "lint": "eslint .",
     "prepublishOnly": "npm run lint && npm test"
   },
-  "ffmpeg-static": {
-    "binary_release": "b4.2.2"
+  "ffedit-static": {
+    "binary_release": "ffedit-0.8"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eugeneware/ffmpeg-static"
+    "url": "https://github.com/pcktm/ffedit-static/"
   },
   "keywords": [
+    "ffglitch",
+    "ffedit",
+    "datamosh",
     "ffmpeg",
+    "glitchart",
     "static",
     "library",
     "binary",
@@ -33,6 +36,7 @@
   ],
   "authors": [
     "Eugene Ware <eugene@noblesamurai.com>",
+    "Jakub Kopańko <https://github.com/pcktm>",
     "contributors"
   ],
   "contributors": [
@@ -48,7 +52,7 @@
   "dependencies": {
     "@derhuerst/http-basic": "^8.2.0",
     "env-paths": "^2.2.0",
-    "progress": "^2.0.3"
+    "ora": "^4.0.3"
   },
   "devDependencies": {
     "any-shell-escape": "^0.1.1",
