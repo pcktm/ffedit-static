@@ -5,7 +5,9 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "install.js"
+    "install.js",
+    "index.d.ts",
+    "tsconfig.json"
   ],
   "scripts": {
     "install": "node install.js",
@@ -58,5 +60,6 @@
     "any-shell-escape": "^0.1.1",
     "eslint": "^6.8.0",
     "tape": "^4.11.0"
-  }
+  },
+  "types": "index.d.ts"
 }
