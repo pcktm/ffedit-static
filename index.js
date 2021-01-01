@@ -6,7 +6,8 @@ const path = require('path')
 const binaries = Object.assign(Object.create(null), {
   darwin: ['x64'],
   linux: ['x64'],
-  win32: ['x64']
+  win32: ['x64'],
+  freebsd: ['x64']
 })
 
 const platform = os.platform()

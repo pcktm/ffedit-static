@@ -1,7 +1,7 @@
 {
   "name": "ffedit-static",
-  "version": "1.0.3",
-  "description": "FFedit static binaries for Mac OSX and Linux and Windows",
+  "version": "1.0.4",
+  "description": "FFedit static binaries for Mac OSX, Linux, FreeBSD and Windows",
   "main": "index.js",
   "files": [
     "index.js",
@@ -26,6 +26,7 @@
     "ffglitch",
     "ffedit",
     "datamosh",
+    "datamoshing",
     "ffmpeg",
     "glitchart",
     "static",
@@ -34,7 +35,8 @@
     "binaries",
     "mac",
     "linux",
-    "windows"
+    "windows",
+    "freebsd"
   ],
   "authors": [
     "Jakub Kopańko <hi@kopanko.com>",

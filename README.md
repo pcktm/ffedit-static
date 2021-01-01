@@ -1,8 +1,8 @@
 # ffedit-static
 
-**[FFedit](http://ffglitch.org/) static binaries for Mac OSX and Linux and Windows.**
+**[FFedit](http://ffglitch.org/) static binaries for Mac OSX, Linux, FreeBSD and Windows.**
 
-Supports macOS (64-bit), Linux (64-bit) and Windows (64-bit). [The ffedit version currently used is `ffedit-0.9.2`.](https://github.com/pcktm/ffedit-static/releases/tag/ffedit-0.9.2)
+Supports macOS (64-bit), Linux (64-bit), FreeBSD (64-bit) and Windows (64-bit). [The ffedit version currently used is `ffedit-0.9.2`.](https://github.com/pcktm/ffedit-static/releases/tag/ffedit-0.9.2)
 
 ## Installation
 
@@ -28,7 +28,8 @@ console.log(paths.ffmpeg);
 
 ## Sources of the binaries
 
-All the binaries are downloaded straight from [FFglitch official page](http://ffglitch.org/pub/bin/).
+OSX, Linux and Windows binaries are downloaded straight from [FFglitch official page](http://ffglitch.org/pub/bin/).
+FreeBSD binaries are built from source by me (with FreeBSD-specific quickjs patches applied).
 
 ## Show your support
  

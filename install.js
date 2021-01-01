@@ -95,14 +95,14 @@ const release = pkg['ffedit-static'].binary_release
 const FFeditDownloadUrl = `https://github.com/pcktm/ffedit-static/releases/download/${release}/ffedit-${os.platform()}-${os.arch()}`;
 const FFmpegDownloadUrl = `https://github.com/pcktm/ffedit-static/releases/download/${release}/ffmpeg-${os.platform()}-${os.arch()}`;
 
-downloadFile(FFeditDownloadUrl, ffeditPaths.ffedit, "FFedit")
+downloadFile(FFeditDownloadUrl, ffeditPaths.ffedit, `FFedit (${os.platform()})`)
   .then(() => {
     fs.chmodSync(ffeditPaths.ffedit, 0o755); // make executable
   })
   .catch(exitOnError)
 
   .then(() =>
-    downloadFile(FFmpegDownloadUrl, ffeditPaths.ffmpeg, "FFmpeg")
+    downloadFile(FFmpegDownloadUrl, ffeditPaths.ffmpeg, `FFmpeg (${os.platform()})`)
   )
   .then(() => {
     fs.chmodSync(ffeditPaths.ffmpeg, 0o755); // make executable
