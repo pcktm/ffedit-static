@@ -15,7 +15,7 @@ const arch = os.arch()
 
 var ffgac = path.join(
   __dirname,
-  platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg'
+  platform === 'win32' ? 'ffgac.exe' : 'ffgac'
 )
 
 var ffedit = path.join(

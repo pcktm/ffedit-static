@@ -102,7 +102,7 @@ downloadFile(FFeditDownloadUrl, ffeditPaths.ffedit, `FFedit (${os.platform()})`)
   .catch(exitOnError)
 
   .then(() =>
-    downloadFile(FFmpegDownloadUrl, ffeditPaths.ffmpeg, `FFgac (${os.platform()})`)
+    downloadFile(FFmpegDownloadUrl, ffeditPaths.ffgac, `FFgac (${os.platform()})`)
   )
   .then(() => {
     fs.chmodSync(ffeditPaths.ffgac, 0o755); // make executable
