@@ -93,7 +93,7 @@ function downloadFile(url, destinationPath, name) {
 
 const release = pkg['ffedit-static'].binary_release
 const FFeditDownloadUrl = `https://github.com/pcktm/ffedit-static/releases/download/${release}/ffedit-${os.platform()}-${os.arch()}`;
-const FFmpegDownloadUrl = `https://github.com/pcktm/ffedit-static/releases/download/${release}/ffmpeg-${os.platform()}-${os.arch()}`;
+const FFmpegDownloadUrl = `https://github.com/pcktm/ffedit-static/releases/download/${release}/ffgac-${os.platform()}-${os.arch()}`;
 
 downloadFile(FFeditDownloadUrl, ffeditPaths.ffedit, `FFedit (${os.platform()})`)
   .then(() => {
@@ -102,9 +102,9 @@ downloadFile(FFeditDownloadUrl, ffeditPaths.ffedit, `FFedit (${os.platform()})`)
   .catch(exitOnError)
 
   .then(() =>
-    downloadFile(FFmpegDownloadUrl, ffeditPaths.ffmpeg, `FFmpeg (${os.platform()})`)
+    downloadFile(FFmpegDownloadUrl, ffeditPaths.ffmpeg, `FFgac (${os.platform()})`)
   )
   .then(() => {
-    fs.chmodSync(ffeditPaths.ffmpeg, 0o755); // make executable
+    fs.chmodSync(ffeditPaths.ffgac, 0o755); // make executable
   })
   .catch(exitOnError);

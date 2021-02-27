@@ -13,7 +13,7 @@ const binaries = Object.assign(Object.create(null), {
 const platform = os.platform()
 const arch = os.arch()
 
-var ffmpeg = path.join(
+var ffgac = path.join(
   __dirname,
   platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg'
 )
@@ -24,8 +24,8 @@ var ffedit = path.join(
 );
 
 if (!binaries[platform] || binaries[platform].indexOf(arch) === -1) {
-  ffmpeg = null
+  ffgac = null
   ffedit = null
 }
 
-module.exports = {ffmpeg, ffedit}
+module.exports = {ffgac, ffedit}

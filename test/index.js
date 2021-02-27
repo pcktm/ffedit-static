@@ -5,15 +5,15 @@ const path = require('path')
 const fs = require('fs')
 const paths = require('..')
 
-it("should find ffmpeg", function (t) {
-  t.ok(path.isAbsolute(paths.ffmpeg));
+it("should find ffgac", function (t) {
+  t.ok(path.isAbsolute(paths.ffgac));
 
-  var stats = fs.statSync(paths.ffmpeg);
-  t.ok(stats.isFile(paths.ffmpeg));
+  var stats = fs.statSync(paths.ffgac);
+  t.ok(stats.isFile(paths.ffgac));
 
   t.doesNotThrow(() => {
-    fs.accessSync(paths.ffmpeg, fs.constants.X_OK);
-  }, "ffmpeg not executable");
+    fs.accessSync(paths.ffgac, fs.constants.X_OK);
+  }, "ffgac not executable");
 
   t.end();
 });

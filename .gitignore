@@ -12,5 +12,7 @@ bin/*
 
 **/ffmpeg
 **/ffmpeg.exe
+**/ffgac
+**/ffgac.exe
 **/ffedit
 **/ffedit.exe

@@ -4,6 +4,6 @@
 export declare var ffmpeg: string
 
 /**
- * FFedit binary path
+ * FFgac binary path
  */
-export declare var ffedit: string
+export declare var ffgac: string
